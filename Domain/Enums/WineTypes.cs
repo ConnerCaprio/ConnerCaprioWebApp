@@ -8,16 +8,15 @@ using System.Xml.Linq;
 
 namespace Domain.Enums
 {
-    internal class WineTypes
+    public enum WineTypes
     {
-        public enum SearchMatchStatus
-        {
-            [Display(Name = "Red")]
-            RED,
-            [Display(Name = "White")]
-            WHITE,
-            [Display(Name = "Sparkling")]
-            SPARKLING
-        }
+        [Display(Name = "Red")]
+        RED,
+        [Display(Name = "White")]
+        WHITE,
+        [Display(Name = "Sparkling")]
+        SPARKLING,
+        [Display(Name = "NA")]
+        NA
     }
 }
