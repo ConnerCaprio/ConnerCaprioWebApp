@@ -6,6 +6,7 @@
 # Certain static assets compiled in build process
 **/wwwroot/css/
 **/wwwroot/js/
+appsettings.json
 
 # User-specific files
 *.rsuser
