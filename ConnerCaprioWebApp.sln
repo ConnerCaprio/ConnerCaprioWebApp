@@ -3,13 +3,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{93685BF3-A042-4ED3-9AC8-DC5627121B26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{93685BF3-A042-4ED3-9AC8-DC5627121B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{4E2968B6-954E-4F12-8819-FB9577D35AC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{4E2968B6-954E-4F12-8819-FB9577D35AC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6737CBAE-AEEA-43C1-A832-5019605541AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{6737CBAE-AEEA-43C1-A832-5019605541AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{D97888C3-C54A-428D-BDC9-B89EF5A8CD88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{D97888C3-C54A-428D-BDC9-B89EF5A8CD88}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "react-app", "react-app\", "{DACC332E-A4F9-4560-96D4-467F2A900653}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55416"
+		Debug.AspNetCompiler.PhysicalPath = "react-app\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55416\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55416"
+		Release.AspNetCompiler.PhysicalPath = "react-app\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55416\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55416"
+		SlnRelativePath = "react-app\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +54,10 @@ Global
 		{D97888C3-C54A-428D-BDC9-B89EF5A8CD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D97888C3-C54A-428D-BDC9-B89EF5A8CD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D97888C3-C54A-428D-BDC9-B89EF5A8CD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACC332E-A4F9-4560-96D4-467F2A900653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACC332E-A4F9-4560-96D4-467F2A900653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACC332E-A4F9-4560-96D4-467F2A900653}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACC332E-A4F9-4560-96D4-467F2A900653}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
