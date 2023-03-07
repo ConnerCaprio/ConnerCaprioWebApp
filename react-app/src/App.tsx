@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import WineCard from './components/WineCard/WineCard';
 
 function App() {
   const [wines, setWines] = useState([]);
@@ -14,16 +15,19 @@ function App() {
     })
   }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          <ul>
+    <div className="row">
+      <div className='col-1'></div>
+      <div className='col-11'>
+        <div className='row'>
             {wines.map((wine: any) => (
-              <li key={wine.id}>{wine.name}</li>
+              
+              <WineCard></WineCard>
+              
             ))}
-          </ul>
-      </header>
+        </div>
+      </div>
     </div>
+    
   );
 }
 

@@ -1,3 +1,4 @@
+using Application.Core;
 using Application.Wines;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
@@ -26,6 +27,7 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssemblies(typeof(List).Assembly);
 });
+builder.Services.AddAutoMapper(typeof (MappingProfiles).Assembly);
 
 var app = builder.Build();
 

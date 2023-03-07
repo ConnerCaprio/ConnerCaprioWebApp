@@ -29,5 +29,20 @@ namespace API.Controllers
             return Ok();
         }
 
+        [HttpPut("{id}")] //api/wines/{id}
+        public async Task<IActionResult> EditWine (Guid id, WineVariety wine) {
+            
+            wine.Id = id;
+            await Mediator.Send(new Edit.Command{Wine = wine});
+            return Ok();
+        }
+
+        [HttpDelete("{id}")] //api/Wines/{id}
+        public async Task<IActionResult> DeleteWineById (Guid id)
+        {
+            await Mediator.Send(new Delete.Command{Id = id});
+            return Ok();
+        }
+
     }
 }
