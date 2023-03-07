@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import axios from 'axios';
 import WineCard from './components/WineCard/WineCard';
+import { Wine } from './Models/wine';
 
 function App() {
-  const [wines, setWines] = useState([]);
+  const [wines, setWines] = useState<Wine[]>([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/API/wines')
+    axios.get<Wine[]>('http://localhost:5000/API/wines')
     .then(Response => {
       console.log(Response);
       setWines(Response.data);
@@ -19,10 +18,8 @@ function App() {
       <div className='col-1'></div>
       <div className='col-11'>
         <div className='row'>
-            {wines.map((wine: any) => (
-              
+            {wines.map(singlewine => (
               <WineCard></WineCard>
-              
             ))}
         </div>
       </div>
