@@ -15,7 +15,7 @@ code {
 
 .background {
   background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(200,239,249,1) 45%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(200,239,249,1) 45%, rgba(0,212,255,1) 100%);
   position:absolute;
   top:0px;
   right:0px;
