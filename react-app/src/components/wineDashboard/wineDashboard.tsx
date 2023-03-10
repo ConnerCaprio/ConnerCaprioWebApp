@@ -14,7 +14,7 @@ export default function WineDashboard({wines}: WineDashboardProps) {
       <div className='col-11'>
         <div className='row'>
             {wines.map(singlewine => (
-              <WineCard wineInfo={singlewine}></WineCard>
+              <WineCard key={singlewine.id} wineInfo={singlewine}></WineCard>
             ))}
         </div>
       </div>
