@@ -2,6 +2,9 @@
     margin: 10px !important;
     background-color: rgba(242, 125, 66, 0.8);
     min-height: 7em;
-    text-align: center;
     padding-top: 3em;
+}
+
+.cardListElement {
+    font-size: 12px;
 }

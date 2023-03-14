@@ -1,13 +1,23 @@
-import React, { FC } from 'react';
+import axios from 'axios';
+import React, { FC, useEffect, useState } from 'react';
 import { Wine } from '../../Models/wine';
 import WineCard from './wineCard/wineCard';
 import styles from './wineDashboard.module.css';
 
-interface WineDashboardProps {
-  wines: Wine[];
-}
 
-export default function WineDashboard({wines}: WineDashboardProps) {
+
+export default function WineDashboard() {
+
+  const [wines, setWines] = useState<Wine[]>([]);
+
+  useEffect(() => {
+    axios.get<Wine[]>('http://localhost:5000/API/wines')
+    .then(Response => {
+      console.log(Response);
+      setWines(Response.data);
+    })
+  }, [])
+
   return (
     <div className="row">
       <div className='col-1'></div>

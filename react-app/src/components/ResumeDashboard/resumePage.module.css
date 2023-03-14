@@ -1,0 +1,12 @@
+.textBlock {
+    background-color: rgba(244, 241, 241, 0.7);
+    text-align: center;
+    margin-bottom: 10px;
+    list-style-position: inside;
+}
+
+.clearSection {
+    text-align: center;
+    margin-bottom: 10px;
+    list-style-position: inside;
+}

@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styles from './NavBar.module.css';
+import { NavLink } from "react-router-dom";
 
 interface NavBarProps {}
 
@@ -12,14 +13,14 @@ const NavBar: FC<NavBarProps> = () => (
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Home</a>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/">Home</NavLink>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Wine App</a>
+        <NavLink className="nav-link" to="/wines">Wine App</NavLink>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Component Demos</a>
+        <NavLink className="nav-link" to="/componentsDemo">Component Demos</NavLink>
       </li>
     </ul>
   </div>

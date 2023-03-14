@@ -6,6 +6,7 @@ export default function useModal() {
   const [isOpen, setisOpen] = useState(false);
 
   const toggle = () => {
+    console.log("hit toggle method");
     setisOpen(!isOpen);
   };
 
