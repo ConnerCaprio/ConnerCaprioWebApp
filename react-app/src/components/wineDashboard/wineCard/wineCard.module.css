@@ -1,10 +1,17 @@
 .wineCardBackground {
     margin: 10px !important;
-    background-color: rgba(242, 125, 66, 0.8);
+    background-color: rgba(242, 125, 66, 0.7);
     min-height: 7em;
     padding-top: 3em;
 }
 
 .cardListElement {
-    font-size: 12px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.wineImages {
+    max-height: 80px;
+    width: auto;
+    margin-bottom: 15px;
 }

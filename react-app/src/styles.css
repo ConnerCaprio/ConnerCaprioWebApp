@@ -22,3 +22,8 @@ code {
   bottom:0px;
   left:0px;
 }
+
+.innerBackground {
+  position: relative; 
+  height: auto;
+}

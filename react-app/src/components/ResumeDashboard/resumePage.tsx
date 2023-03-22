@@ -36,7 +36,25 @@ export default function ResumePage() {
                 </ul>
             </div>
             <div className={styles.clearSection}>
-                <h3>Misc</h3>
+                <h3>Education</h3>
+                <h6>Virginia Tech - Class of 2019</h6>
+                <p>Graduated with a bachelor of science in Computer Science</p>
+            </div>
+            <div className={styles.textBlock}>
+                <h3>Projects</h3>
+                <ul>
+                    <li>This Site!</li>
+                    <li>MEAN AI Flappy Bird</li>
+                    <li>Magic Mirror running react app off raspberry pi</li>
+                    <li>Platformer made in unity</li>
+                    <li>A similar web app made in angular</li>
+                    <li>Restaurant Picker app made for androids</li>
+                    <li>Other Non CS Related Projects</li>
+                </ul>
+            </div>
+            <div className={styles.clearSection}>
+                <h3>Licenses and Links</h3>
+                <h6>Microsoft Azure Fundamentals AZ-900</h6>
                 <a className='link-primary' href='https://www.linkedin.com/in/Conner-Caprio/' target="_blank">LinkedIn</a><br />
                 <a className='link-primary' href='https://github.com/ConnerCaprio' target="_blank">GitHub</a>
             </div>
