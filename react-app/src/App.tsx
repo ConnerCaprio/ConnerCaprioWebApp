@@ -37,12 +37,8 @@ function App() {
               <li>image showing</li>
               <li>image upload</li>
               <li>storing images</li>
-              <li>resume page</li>
               <li>components page</li>
-              <li>add new wine</li>
-              <li>deleting wines</li>
               <li>working nav bar when small screen</li>
-              <li>publish to azure</li>
               <li>wine card compoent style and layout</li>
               <li>showing wine type by enum number</li>
             </ul>

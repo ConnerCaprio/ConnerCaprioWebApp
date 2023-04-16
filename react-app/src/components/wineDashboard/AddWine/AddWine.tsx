@@ -5,9 +5,11 @@ import WineForm from '../../forms/WineForm';
 interface addWineProps {
   wineInfo: Wine;
 }
+
+
+
 // {wineInfo}: addWineProps
 export default function AddWine () {
-
 
   return (
     <div style={{marginBottom:'100px', marginTop:'50px'}}>

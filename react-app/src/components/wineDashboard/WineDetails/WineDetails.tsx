@@ -38,17 +38,17 @@ export default function WineDetails () {
 
   return (
     <div className='row'>
-        <div className='col-7' style={{marginBottom:'50px'}}>
+        <div className='col-7' style={{marginBottom:'50px', fontSize:'20px'}}>
             <h2 style={{marginTop:'15px'}}>Details for {wine?.name}</h2>
             {wine && (<ul>
-            <li className={styles.cardListElement}>{wine.name}</li>
-            <li className={styles.cardListElement}>{wine.brand}</li>
-            <li className={styles.cardListElement}>{wine.review}</li>
-            <li className={styles.cardListElement}>{wine.year}</li>
-            <li className={styles.cardListElement}>{wine.price}</li>
-            <li className={styles.cardListElement}>{wine.grapeType}</li>
-            <li className={styles.cardListElement}>{wine.notes}</li>
-            <li className={styles.cardListElement}>{wine.wineType}</li>
+            <li className={styles.cardListElement}><b>Name:</b> {wine.name}</li>
+            <li className={styles.cardListElement}><b>Brand:</b> {wine.brand}</li>
+            <li className={styles.cardListElement}><b>Review:</b> {wine.review}</li>
+            <li className={styles.cardListElement}><b>Year:</b> {wine.year}</li>
+            <li className={styles.cardListElement}><b>Price:</b> {wine.price}</li>
+            <li className={styles.cardListElement}><b>Grape Type:</b> {wine.grapeType}</li>
+            <li className={styles.cardListElement}><b>Notes:</b> {wine.notes}</li>
+            <li className={styles.cardListElement}><b>Wine Type:</b> {wine.wineType}</li>
             </ul>)}        
         </div>
         <div className='col-5'>

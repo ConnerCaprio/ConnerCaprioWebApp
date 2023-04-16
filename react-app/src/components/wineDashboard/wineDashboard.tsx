@@ -11,6 +11,17 @@ export default function WineDashboard() {
 
   const [wines, setWines] = useState<Wine[]>();
   const url = process.env.REACT_APP_API_URL + 'wines';
+  const [wineDeleted, setWineDeleted] = useState(false);
+
+  const DeletedWine = () => (
+    <div id="FormSubmittedAlert" className="alert alert-danger" style={{maxWidth:'30%'}} role="alert">
+    Wine Deleted!
+    </div>
+  )
+
+  function deleteWine (id: string) {
+    setWineDeleted(true);
+  }
 
   useEffect(() => {
     axios.get<Wine[]>(url)
@@ -21,14 +32,17 @@ export default function WineDashboard() {
   }, [])
 
   return (
-    <div className="row">
-      <div className='col-11 offset-1'>
-        <div className='row'>
-            {wines && wines.map(singlewine => (
-              <WineCard key={singlewine.id} wineInfo={singlewine}></WineCard>
-            ))}
+    <div>
+      { wineDeleted ? <DeletedWine /> : null }
+      <div className="row">
+        <div className='col-11 offset-1'>
+          <div className='row'>
+              {wines && wines.map(singlewine => (
+                <WineCard key={singlewine.id} wineInfo={singlewine} deleteClicked={deleteWine}></WineCard>
+              ))}
+          </div>
+          <button><NavLink className="nav-link" to="/wines/add">Add Wine</NavLink></button>
         </div>
-        <button><NavLink className="nav-link" to="/wines/add">Add Wine</NavLink></button>
       </div>
     </div>
   )
